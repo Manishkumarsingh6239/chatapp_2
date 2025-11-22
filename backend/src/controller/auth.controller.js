@@ -2,7 +2,7 @@ import User from '../models/User.js'
 import bcrypt from 'bcryptjs'
 import { generateToken } from '../lib/utils.js'
 import { sendWelcomeEmail } from '../emails/emailhandler.js';
-import "dotenv/config"
+import {ENV} from '../lib/env.js';
 
 export const signup = async (req, res) => {
   const { fullName, email, password } = req.body;
@@ -61,3 +61,4 @@ export const signup = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+//28 202
