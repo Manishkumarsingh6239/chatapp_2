@@ -11,12 +11,15 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Manishkumarsingh6239/chatapp_2.git"
-    },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Manishkumarsingh6239/chatapp_2/issues"
   },
-  "homepage": "https://github.com/Manishkumarsingh6239/chatapp_2#readme"
+  "homepage": "https://github.com/Manishkumarsingh6239/chatapp_2#readme",
+  "dependencies": {
+    "cloudinary": "^2.5.1"
+  }
 }
