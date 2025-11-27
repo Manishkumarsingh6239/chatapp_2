@@ -2,7 +2,7 @@ import React from 'react'
 
 const LoginPage = () => {
   return (
-    <div>
+    <div className="z-10">
       LoginPage
     </div>
   )

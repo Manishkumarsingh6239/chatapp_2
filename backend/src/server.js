@@ -5,6 +5,7 @@ import path from 'path'
 import authRoutes from './routes/auth.route.js'
 import messageroutes from './routes/message.route.js'
 import { connectDB } from './lib/db.js'
+import cors from 'cors'
 import cookieParser from 'cookie-parser'
 
 const app = express()
@@ -12,6 +13,10 @@ const PORT = ENV.PORT || 3000
 
 app.use(express.json()) //parse the JSON and convert it to a JavaScript object.
 app.use(cookieParser())
+app.use(cors({
+    origin: ENV.CLIENT_URL,
+    credentials: true,
+}))
 
 const __dirname = path.resolve()
 
