@@ -4,7 +4,7 @@ import SignUpPage from './Pages/SignUpPage'
 import ChatPage from "./Pages/ChatPage.jsx"
 import LoginPage from "./Pages/LoginPage.jsx"
 import { useAuthStore } from './store/useAuthStore.js'
-import PageLoader from './Components/PageLoader.jsx'
+import PageLoader from './components/PageLoader.jsx'
 import {Toaster} from 'react-hot-toast'
 
 
