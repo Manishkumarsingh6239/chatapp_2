@@ -9,11 +9,11 @@ import {Toaster} from 'react-hot-toast'
 
 
 const App = () => {
-  const { authuser, isCheckingAuth, chechAuth } = useAuthStore();
+  const { authuser, isCheckingAuth, checkAuth } = useAuthStore();
 
   useEffect(()=>{
-    chechAuth();
-  },[chechAuth])
+    checkAuth();
+  },[checkAuth])
 
   if (isCheckingAuth) return <PageLoader/>
 
