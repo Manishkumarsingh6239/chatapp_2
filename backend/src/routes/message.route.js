@@ -4,7 +4,7 @@ import { getAllContacts,getChatPartners, getMessagesByUserId, sendMessage } from
 import { protectRoute} from "../middlewares/auth.middleware.js";
 import { arcjetProtection } from "../middlewares/arcjet.middleware.js";
 
-
+// router.use(arcjetProtection);
 router.use(protectRoute);
 
 router.get("/contacts", getAllContacts);
