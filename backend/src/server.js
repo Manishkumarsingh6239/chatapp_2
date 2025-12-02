@@ -11,7 +11,7 @@ import cookieParser from 'cookie-parser'
 const app = express()
 const PORT = ENV.PORT || 3000
 
-app.use(express.json()) //parse the JSON and convert it to a JavaScript object.
+app.use(express.json({ limit: '5mb' })) //parse the JSON and convert it to a JavaScript object.
 app.use(cookieParser())
 app.use(cors({
     origin: ENV.CLIENT_URL,
