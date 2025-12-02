@@ -32,6 +32,7 @@ export const useChatStore = create((set, get) => ({
       set({ isUsersLoading: false });
     }
   },
+  
   getMyChatPartners: async () => {
     set({ isUsersLoading: true });
     try {
