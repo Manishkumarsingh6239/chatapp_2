@@ -19,7 +19,7 @@ const ChatsList = () => {
     return <NoChatsFound />;
   }
   return (
-    <div>
+    <div className='flex flex-col gap-2'>
        {chats.map((chat) => (
         <div
           key={chat._id}
