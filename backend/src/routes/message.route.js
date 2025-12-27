@@ -2,7 +2,7 @@ import express from 'express'
 const router = express.Router()
 import { getAllContacts,getChatPartners, getMessagesByUserId, sendMessage } from '../controller/message.controller.js'
 import { protectRoute} from "../middlewares/auth.middleware.js";
-import { arcjetProtection } from "../middlewares/arcjet.middleware.js";
+// import { arcjetProtection } from "../middlewares/arcjet.middleware.js";
 
 // router.use(arcjetProtection);
 router.use(protectRoute);
