@@ -1,7 +1,7 @@
 [README.MD](https://github.com/user-attachments/files/25827042/README.MD)
 <h1 align="center">✨ Full-Stack Chat App with Auth & Emails ✨</h1>
 
-![Demo App](/frontend/public/Screenshot 2026-03-09 003413.png)
+![Demo App](frontend/public/Screenshot%202026-03-09%20003413.png)
 
 Highlights:
 
